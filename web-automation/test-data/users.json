@@ -1,0 +1,7 @@
+{
+  "standard": { "username": "standard_user", "password": "secret_sauce" },
+  "locked": { "username": "locked_out_user", "password": "secret_sauce" },
+  "problem": { "username": "problem_user", "password": "secret_sauce" },
+  "wrongPassword": { "username": "standard_user", "password": "wrong_password" },
+  "unknown": { "username": "nobody", "password": "secret_sauce" }
+}

@@ -1,0 +1,7 @@
+node_modules/
+web-automation/.env
+api-automation/target/
+reports/web/
+*.log
+.idea/
+.vscode/
