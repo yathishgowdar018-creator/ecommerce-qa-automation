@@ -39,7 +39,7 @@ Honest limits: SauceDemo has no search box (a name filter is tested instead), no
 - **Web:** 41 tests: 39 passed, 0 failed, 2 skipped (4 of the passes are expected-failure bug tests: BUG-001 to BUG-004). Screenshot: `docs/screenshots/playwright-report.png` (earlier run, 38 passed).
 - **API:** 36 passed, 0 failed (`mvn test`).
 - **API known-bug run** (`-DexcludedGroups=none`): 5 expected failures, each a real defect. Screenshot: `docs/screenshots/surefire-report-with-known-bugs.png`.
-- **GitHub Actions:** workflow written but **not yet run** by me. Push the repo and check the Actions tab.
+- **GitHub Actions:** run #1 on 06-Oct-2026 passed (web and API jobs). Reports uploaded as artifacts `web-report` and `api-report`.
 
 ## Bugs found
 See [`bug-reports/README.md`](bug-reports/README.md). Summary:
@@ -102,3 +102,17 @@ On every push / pull request: checkout → install → run Playwright → run RE
 
 ## Future improvements
 Allure reporting, accessibility checks (`@axe-core/playwright`), visual regression, UI tests that create data through the API, a self-hosted store for empty-state mocking, Docker.
+
+## Screenshots
+
+**CI pipeline: both jobs green**
+![CI pipeline: both jobs green](docs/screenshots/github-actions-green.png)
+
+**CI artifacts: web-report and api-report**
+![CI artifacts: web-report and api-report](docs/screenshots/github-actions-artifacts.png)
+
+**Playwright report (local run)**
+![Playwright report (local run)](docs/screenshots/playwright-report.png)
+
+**API known-bug run (5 expected failures)**
+![API known-bug run (5 expected failures)](docs/screenshots/surefire-report-with-known-bugs.png)
